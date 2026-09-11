@@ -11,7 +11,7 @@ const orderController = require('../controllers/orderController');
 router.post('/orders', orderController.createOrder);
 
 
-router.get('/menu', menuController.getMenu);
+router.get('/restaurants/:id/menu', menuController.getMenuByRestaurant); 
 
 
 module.exports = router;
